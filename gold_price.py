@@ -9,7 +9,7 @@ URL = 'https://markets.businessinsider.com/commodities/gold-price'
 
 
 def write_price_to_csv(price):
-    with open('/Users/martindanek/Documents/programovani/files/csv/gold.csv', 'a') as file:
+    with open('tables/gold.csv', 'a') as file:
         writer = csv.writer(file)
         writer.writerow([price, datetime.now().strftime('%d %b %Y %H %M')])
 
