@@ -14,7 +14,7 @@ def compose_url(account, date_from, date_to):
 
 
 def write_data(arg, account):
-    with open(f'/Users/martindanek/Documents/programovani/files/csv/fio_'
+    with open(f'tables/fio_'
               f'{str(account)}.csv', 'w') as file:
         writer = csv.writer(file)
         writer.writerows(arg)
